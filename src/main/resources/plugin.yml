@@ -1,13 +1,19 @@
 name: DangMob
-version: 1.0.0
+version: 1.1.0
 main: my.dangmob.DangMob
 api-version: "1.20"
 commands:
   mob:
-    description: Remove all mobs from the server
-    usage: /mob [hostile|reload]
+    description: Remove mobs around you
+    usage: /mob [hostile]
     aliases: [clearmobs]
 permissions:
   dangmob.use:
-    description: Remove mobs
+    description: Remove mobs around yourself
+    default: true
+  dangmob.admin:
+    description: Remove all mobs server-wide and reload the config
+    default: op
+  dangmob.bypass:
+    description: Skip the command cooldown
     default: op
