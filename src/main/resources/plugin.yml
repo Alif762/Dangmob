@@ -5,8 +5,8 @@ api-version: "1.20"
 commands:
   mob:
     description: Remove mobs around you
-    usage: /mob [hostile]
-    aliases: [clearmobs]
+    usage: /dmob [hostile]
+    aliases: [dmob, clearmobs]
 permissions:
   dangmob.use:
     description: Remove mobs around yourself
